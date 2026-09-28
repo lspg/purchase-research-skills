@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Purchase Research Session",
+  "type": "object",
+  "required": [
+    "format_version",
+    "session_id",
+    "stage"
+  ],
+  "properties": {
+    "format_version": {
+      "const": "1.0"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "project": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "stage": {
+      "enum": [
+        "DISCOVERY",
+        "REQUIREMENTS",
+        "MARKET_SCAN",
+        "SHORTLIST",
+        "DEEP_AUDIT",
+        "VALIDATION",
+        "DECISION",
+        "REPORT",
+        "WATCH",
+        "LEARNING"
+      ]
+    },
+    "requirements_file": {
+      "type": "string"
+    },
+    "products_file": {
+      "type": "string"
+    },
+    "evidence_file": {
+      "type": "string"
+    },
+    "configurations_file": {
+      "type": "string"
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocking_unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision_summary": {
+      "type": "string"
+    },
+    "skill_versions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}
