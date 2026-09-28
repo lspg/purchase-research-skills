@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Purchase Research Configuration",
+  "type": "object",
+  "required": [
+    "id",
+    "product_id",
+    "components"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "scenario": {
+      "type": "string"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "type"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "base_product",
+              "mandatory_accessory",
+              "recommended_accessory",
+              "infrastructure",
+              "consumable",
+              "service",
+              "other"
+            ]
+          },
+          "price": {
+            "type": "number"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "total_acquisition_cost": {
+      "type": "number"
+    },
+    "estimated_recurring_cost": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
