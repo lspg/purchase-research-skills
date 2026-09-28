@@ -2,7 +2,7 @@
 name: purchase-research
 description: Accompagne une réflexion structurée avant l'achat d'un produit. Utiliser dès que l'utilisateur manifeste une intention, une envie, une hésitation ou un projet d'achat et souhaite être conseillé, comparer des produits, savoir quoi choisir, combien dépenser ou vérifier si un produit lui convient. Le skill transforme l'idée initiale en cahier des charges adapté à la catégorie, pose uniquement les questions discriminantes, effectue une recherche web poussée et sourcée (fabricants, documentation, tests indépendants, SAV, prix, accessoires, coût complet), compare plusieurs scénarios d'usage, identifie les inconnues bloquantes et génère sur demande ou en fin d'étude un document de synthèse décisionnel.
 metadata:
-  version: 1.1.0
+  version: 1.2.0
 ---
 
 # Purchase Research
@@ -18,14 +18,15 @@ Assistant de réflexion pré-achat. L'objectif n'est pas de trouver rapidement �
 - Utiliser plusieurs scénarios si les usages conduisent à des optimums différents.
 - Marquer les données importantes non établies `À CONFIRMER`.
 - Réévaluer le classement lorsqu'un nouvel usage apparaît.
+- Qualifier les preuves et appliquer les contraintes éliminatoires selon `references/evidence-engine.md`.
 
 ## Workflow
 1. Identifier l'intention et la catégorie ; lire `references/category-question-bank.md`.
 2. Construire un cahier des charges : Obligatoire / Important / Souhaitable / Hors besoin.
 3. Lire `references/source-policy.md`, explorer 5 à 12 candidats et éliminer ceux qui violent un critère obligatoire.
-4. Auditer 3 à 6 finalistes avec `references/audit-framework.md` : officiel, manuel, garantie, pièces, prix actuel et tests indépendants.
+4. Lire `references/evidence-engine.md`, puis auditer 3 à 6 finalistes avec `references/audit-framework.md` : officiel, manuel, garantie, pièces, prix actuel et tests indépendants. Pour chaque critère obligatoire, maintenir PASS / FAIL / UNRESOLVED.
 5. Vérifier fiabilité, SAV, réparabilité, consommables et pièces critiques.
-6. Calculer prix catalogue, prix actuel, accessoires obligatoires, coût système et coût de possession.
+6. Calculer prix catalogue, prix actuel, accessoires obligatoires, infrastructure, configuration recommandée et coût de possession. Comparer les systèmes qui satisfont le besoin, pas seulement les produits nus.
 7. Rechercher des essais terrain adaptés à la catégorie ; ne pas transposer les résultats d'une variante matériellement différente.
 8. Comparer par scénarios quand nécessaire ; éviter les scores pseudo-précis.
 9. Identifier les inconnues bloquantes et, si nécessaire, préparer les mêmes questions pour les fabricants concurrents.
@@ -68,3 +69,7 @@ Lire `references/specialization-guide.md` avant de générer ou mettre à jour u
 - Préférer 2 à 4 options finales.
 - Distinguer « meilleur pour cet usage » de « meilleur produit absolu ».
 - Si un skill spécialisé existe, l'utiliser en complément de ce workflow.
+
+## Version et mises à jour
+
+Lire `references/update-policy.md` lorsqu'une vérification ou une mise à jour du skill est pertinente. Le fichier `manifest.json` du dépôt stable est la source de vérité des versions. Une version plus récente peut être signalée et proposée, mais aucune auto-modification silencieuse n'est autorisée.
