@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ev-gmz-capacity",
+    "claim": "Garrett Miller Z advertised capacity is 170 kg",
+    "value": 170,
+    "unit": "kg",
+    "state": "CLAIMED",
+    "source_type": "manufacturer",
+    "source_url": "https://www.garrettmiller.co/products/velo-ebike-garret-miller",
+    "source_date": "2026-09-28",
+    "notes": "Definition as payload vs GVW not established; written clarification requested",
+    "decision_impact": "blocking"
+  },
+  {
+    "id": "ev-gmz-weight",
+    "claim": "Garrett Miller Z complete weight is 32 kg",
+    "value": 32,
+    "unit": "kg",
+    "state": "CONFIRMED",
+    "source_type": "manufacturer",
+    "source_url": "https://www.garrettmiller.co/products/velo-ebike-garret-miller",
+    "source_date": "2026-09-28",
+    "notes": "Battery-removed weight and wheelbase still unknown",
+    "decision_impact": "blocking"
+  },
+  {
+    "id": "ev-xtrail-capacity",
+    "claim": "Unikride Xtrail advertised capacity is 180 kg",
+    "value": 180,
+    "unit": "kg",
+    "state": "CLAIMED",
+    "source_type": "manufacturer",
+    "source_url": "https://unikride.com/products/fatstreet-xtrail-velo-electrique-biplace",
+    "source_date": "2026-09-28",
+    "notes": "Definition and adult rear-seat limit require confirmation",
+    "decision_impact": "blocking"
+  },
+  {
+    "id": "ev-xtrail-weight",
+    "claim": "Unikride Xtrail complete weight is 37.5 kg",
+    "value": 37.5,
+    "unit": "kg",
+    "state": "CONFIRMED",
+    "source_type": "manufacturer",
+    "source_url": "https://unikride.com/products/fatstreet-xtrail-velo-electrique-biplace",
+    "source_date": "2026-09-28",
+    "notes": "Potential incompatibility with 30 kg-per-rail car racks even after battery removal; exact battery weight required",
+    "decision_impact": "blocking"
+  },
+  {
+    "id": "ev-yuba-passenger",
+    "claim": "Yuba Kombi EP5 explicitly supports an adult rear passenger within capacity limits",
+    "state": "CONFIRMED",
+    "source_type": "manufacturer",
+    "source_url": "https://yubabikes.eu/fr/produit/kombi-ep5/",
+    "source_date": "2026-09-28",
+    "decision_impact": "high"
+  },
+  {
+    "id": "ev-yuba-cert",
+    "claim": "Yuba Kombi EP5 is documented to EN 15194:2017 and EN 17860-2:2024",
+    "state": "CONFIRMED",
+    "source_type": "manufacturer",
+    "source_url": "https://yubabikes.eu/fr/produit/kombi-ep5/",
+    "source_date": "2026-09-28",
+    "decision_impact": "high"
+  }
+]
