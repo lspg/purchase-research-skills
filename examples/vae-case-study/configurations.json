@@ -1,0 +1,133 @@
+[
+  {
+    "id": "cfg-gmz-vacation",
+    "name": "Garrett Z vacation modular",
+    "product_id": "garrett-miller-z-2026",
+    "scenario": "vacation-allround",
+    "components": [
+      {
+        "name": "Garrett Miller Z",
+        "type": "base_product",
+        "price": 2790,
+        "currency": "EUR",
+        "required": true
+      },
+      {
+        "name": "Garrett X/Z rack support",
+        "type": "recommended_accessory",
+        "price": 89,
+        "currency": "EUR",
+        "required": false
+      },
+      {
+        "name": "Panniers estimate",
+        "type": "recommended_accessory",
+        "price": 150,
+        "currency": "EUR",
+        "required": false
+      },
+      {
+        "name": "Burley Travoy",
+        "type": "recommended_accessory",
+        "price": 349,
+        "currency": "EUR",
+        "required": false
+      },
+      {
+        "name": "Thule VeloSpace 3 + fatbike straps",
+        "type": "infrastructure",
+        "price": 889.9,
+        "currency": "EUR",
+        "required": true
+      }
+    ],
+    "total_acquisition_cost": 4267.9,
+    "currency": "EUR",
+    "notes": "Car-rack compatibility remains unresolved pending battery-removed weight/wheelbase."
+  },
+  {
+    "id": "cfg-xtrail-vacation",
+    "name": "Unikride Xtrail vacation modular",
+    "product_id": "unikride-xtrail",
+    "scenario": "vacation-allround",
+    "components": [
+      {
+        "name": "Unikride Xtrail",
+        "type": "base_product",
+        "price": 2999,
+        "currency": "EUR",
+        "required": true
+      },
+      {
+        "name": "Front rack",
+        "type": "recommended_accessory",
+        "price": 69,
+        "currency": "EUR",
+        "required": false
+      },
+      {
+        "name": "Basket",
+        "type": "recommended_accessory",
+        "price": 89,
+        "currency": "EUR",
+        "required": false
+      },
+      {
+        "name": "Large rear rack",
+        "type": "recommended_accessory",
+        "price": 69,
+        "currency": "EUR",
+        "required": false
+      },
+      {
+        "name": "Burley Travoy",
+        "type": "recommended_accessory",
+        "price": 349,
+        "currency": "EUR",
+        "required": false
+      },
+      {
+        "name": "Thule VeloSpace 3 + fatbike straps",
+        "type": "infrastructure",
+        "price": 889.9,
+        "currency": "EUR",
+        "required": true
+      }
+    ],
+    "total_acquisition_cost": 4464.9,
+    "currency": "EUR",
+    "notes": "Car-rack compatibility unresolved; 37.5 kg complete bike weight is a major concern."
+  },
+  {
+    "id": "cfg-yuba-cargo",
+    "name": "Yuba Kombi EP5 cargo vacation",
+    "product_id": "yuba-kombi-ep5",
+    "scenario": "cargo-rational",
+    "components": [
+      {
+        "name": "Yuba Kombi EP5",
+        "type": "base_product",
+        "price": 3299,
+        "currency": "EUR",
+        "required": true
+      },
+      {
+        "name": "Yuba cargo accessories estimate",
+        "type": "recommended_accessory",
+        "price": 350,
+        "currency": "EUR",
+        "required": false
+      },
+      {
+        "name": "Thule VeloSpace 3",
+        "type": "infrastructure",
+        "price": 869.95,
+        "currency": "EUR",
+        "required": true
+      }
+    ],
+    "total_acquisition_cost": 4518.95,
+    "currency": "EUR",
+    "notes": "No trailer included; cargo architecture may make it unnecessary for most shopping."
+  }
+]
