@@ -13,4 +13,5 @@ jobs:
           python-version: '3.12'
       - run: python tools/build.py
       - run: python tools/validate.py
+      - run: python tests/test_vae_case.py
       - run: git diff --exit-code -- dist/
