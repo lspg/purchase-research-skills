@@ -1,7 +1,7 @@
 ---
 name: purchase-research
 description: Structured pre-purchase research: discover real requirements, ask discriminating questions, research the market, audit finalists, compare total cost/SAV and produce a decision brief. Use when the user is considering buying or comparing a product.
-version: 1.3.0
+version: 1.4.0
 author: Loïs Puig
 license: MIT
 metadata:
@@ -41,3 +41,6 @@ When update checking is requested or skill maintenance begins, load `references/
 
 ## Portable research state
 For substantial research, cross-session continuation or handoff, load `references/state-protocol.md`. Prefer a structured bundle over reconstructing state from chat history. Revalidate time-sensitive market facts when resuming.
+
+## Watch mode
+When a mature research session enters WATCH, load `references/watch-engine.md`. Monitor only configured finalists/material events. Never create recurring monitoring without explicit user authorization. Use the host scheduler if available; the skill itself does not bypass scheduling or security controls.
