@@ -1,0 +1,15 @@
+{
+  "project": "purchase-research-skills",
+  "channel": "stable",
+  "updated": "2026-09-28",
+  "repository": "https://github.com/lspg/purchase-research-skills",
+  "skills": {
+    "purchase-research": {"version": "1.2.0", "path": "skills/purchase-research"},
+    "vae-research": {"version": "1.0.0", "path": "skills/vae-research"}
+  },
+  "distributions": {
+    "chatgpt-free": {"path": "dist/chatgpt-free"},
+    "gemini": {"path": "dist/gemini"},
+    "hermes": {"path": "dist/hermes"}
+  }
+}
