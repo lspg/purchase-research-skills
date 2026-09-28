@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Purchase Research Watch Snapshot",
+  "type": "object",
+  "required": [
+    "observed_at",
+    "product_id"
+  ],
+  "properties": {
+    "observed_at": {
+      "type": "string"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "seller": {
+      "type": "string"
+    },
+    "stock": {
+      "enum": [
+        "in_stock",
+        "out_of_stock",
+        "preorder",
+        "unknown"
+      ]
+    },
+    "promotion": {
+      "type": "string"
+    },
+    "generation": {
+      "type": "string"
+    },
+    "warranty_summary": {
+      "type": "string"
+    },
+    "subsidy_summary": {
+      "type": "string"
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
