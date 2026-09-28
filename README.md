@@ -34,3 +34,12 @@ Each skill directory follows the Agent Skills convention with a `SKILL.md` conta
 ## License
 
 MIT.
+
+
+## ChatGPT Free
+
+A standalone edition for accounts without custom Skill import is available in:
+
+`dist/chatgpt-free/purchase-research.md`
+
+See `dist/chatgpt-free/README.md` for installation guidance and limitations. This edition preserves the core pre-purchase workflow but does not automatically load the modular reference files or specialized skills.
