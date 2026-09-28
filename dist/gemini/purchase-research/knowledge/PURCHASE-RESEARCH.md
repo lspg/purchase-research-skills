@@ -1,6 +1,6 @@
 # Purchase Research — Gemini Knowledge
 
-Version: 1.3.0
+Version: 1.4.0
 Channel: stable
 
 ## Mission
@@ -31,3 +31,6 @@ Signaler une version plus récente ; proposer la mise à jour Knowledge ; ne jam
 
 ## État portable
 Pour une étude substantielle, maintiens ou exporte si possible un bundle structuré compatible avec les schémas du dépôt : requirements, products, evidence, configurations et session. Lors d'une reprise, conserve les contraintes utilisateur mais revalide les faits temporels (prix, stock, promotions, réglementation, aides).
+
+## Watch mode
+Quand une étude mature passe en WATCH, surveille seulement les finalistes et changements matériels définis par l'utilisateur : seuil de prix, vraie baisse observée, stock, promotion, nouvelle génération, résolution d'un blocker, garantie/SAV ou aide. Ne transforme pas cela en veille générale. Sans capacité de planification autonome, produis une spécification de surveillance au lieu de prétendre surveiller en arrière-plan.
