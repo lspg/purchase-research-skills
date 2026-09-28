@@ -4,7 +4,7 @@ Reusable Agent Skills for structured product-purchase research.
 
 ## Skills
 
-### purchase-research — v1.1.0
+### purchase-research — v1.2.0
 Generic pre-purchase research orchestrator. It turns an initial buying idea into a requirements brief, asks only discriminating questions, researches the market, audits finalists, compares total cost and after-sales support, and can propose creation or improvement of a specialized domain skill.
 
 ### vae-research — v1.0.0
@@ -51,3 +51,8 @@ See `dist/chatgpt-free/README.md` for installation guidance and limitations. Thi
 - `dist/hermes/` contains native Hermes Agent SKILL.md distributions with modular references and research-only safety boundaries.
 
 See each distribution README for installation guidance.
+
+
+## Version manifest
+
+`manifest.json` is the canonical stable-version manifest. Platform distributions may check it and offer updates, but mutation/update is never silent and requires platform capability plus user authorization.
