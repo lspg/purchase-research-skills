@@ -1,0 +1,33 @@
+{
+  "format_version": "1.0",
+  "session_id": "vae-vacation-2026-09",
+  "project": "VAE polyvalent vacances",
+  "category": "vae",
+  "created_at": "2026-09-28",
+  "updated_at": "2026-09-28",
+  "stage": "WATCH",
+  "requirements_file": "requirements.json",
+  "products_file": "products.json",
+  "evidence_file": "evidence.json",
+  "configurations_file": "configurations.json",
+  "scenarios": [
+    "vacation-allround",
+    "cargo-rational"
+  ],
+  "blocking_unknowns": [
+    "Garrett Miller Z: advertised 170 kg definition and adult rear passenger authorization",
+    "Garrett Miller Z: exact battery-removed weight and wheelbase",
+    "Unikride Xtrail: advertised 180 kg definition and adult rear passenger authorization",
+    "Unikride Xtrail: exact battery-removed weight and wheelbase"
+  ],
+  "next_actions": [
+    "Process manufacturer replies when received",
+    "Recompute car-rack PASS/FAIL for Garrett Z and Xtrail",
+    "Continue material price monitoring on finalists"
+  ],
+  "decision_summary": "Garrett Z is the attractive value/polyvalence hypothesis but remains blocked by payload and car-rack evidence. Xtrail offers more battery/capacity but is heavier and also unresolved for rack transport. Yuba Kombi EP5 is the best-documented all-hard-constraints PASS alternative but represents a different cargo-oriented compromise.",
+  "skill_versions": {
+    "purchase-research": "1.5.0",
+    "vae-research": "1.0.0"
+  }
+}
