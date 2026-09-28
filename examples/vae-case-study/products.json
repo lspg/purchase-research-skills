@@ -1,0 +1,149 @@
+[
+  {
+    "id": "garrett-miller-z-2026",
+    "brand": "Garrett Miller",
+    "model": "Z",
+    "variant": "2026",
+    "category": "fatbike-biplace",
+    "official_url": "https://www.garrettmiller.co/products/velo-ebike-garret-miller",
+    "price": {
+      "amount": 2790,
+      "currency": "EUR",
+      "seller": "Garrett Miller",
+      "observed_at": "2026-09-28",
+      "conditions": "Code G100 (-100 EUR) displayed during research"
+    },
+    "specs": {
+      "motor": "Bafang rear hub 250 W, 80 Nm",
+      "battery_wh": 720,
+      "weight_kg": 32,
+      "advertised_capacity_kg": 170,
+      "wheels": "20x4",
+      "suspension": "front+rear"
+    },
+    "evidence_ids": [
+      "ev-gmz-capacity",
+      "ev-gmz-weight"
+    ],
+    "constraint_results": {
+      "req-passenger": "UNRESOLVED",
+      "req-car-rack": "UNRESOLVED",
+      "req-france-sav": "PASS",
+      "req-legal-vae": "PASS"
+    },
+    "status": "finalist"
+  },
+  {
+    "id": "unikride-xtrail",
+    "brand": "Unikride",
+    "model": "Fatstreet Xtrail",
+    "category": "fatbike-biplace",
+    "official_url": "https://unikride.com/products/fatstreet-xtrail-velo-electrique-biplace",
+    "price": {
+      "amount": 2999,
+      "currency": "EUR",
+      "seller": "Unikride",
+      "observed_at": "2026-09-28"
+    },
+    "specs": {
+      "motor": "Bafang rear hub 250 W, 80 Nm",
+      "battery_wh": 960,
+      "weight_kg": 37.5,
+      "advertised_capacity_kg": 180,
+      "wheels": "20x4",
+      "suspension": "front+rear"
+    },
+    "evidence_ids": [
+      "ev-xtrail-capacity",
+      "ev-xtrail-weight"
+    ],
+    "constraint_results": {
+      "req-passenger": "UNRESOLVED",
+      "req-car-rack": "UNRESOLVED",
+      "req-france-sav": "PASS",
+      "req-legal-vae": "PASS"
+    },
+    "status": "finalist"
+  },
+  {
+    "id": "yuba-kombi-ep5",
+    "brand": "Yuba",
+    "model": "Kombi EP5",
+    "category": "cargo-longtail",
+    "official_url": "https://yubabikes.eu/fr/produit/kombi-ep5/",
+    "price": {
+      "amount": 3299,
+      "currency": "EUR",
+      "seller": "Yuba / network",
+      "observed_at": "2026-09-28"
+    },
+    "specs": {
+      "motor": "Shimano EP5 mid-drive, 60 Nm",
+      "battery_wh": 504,
+      "weight_kg": 30,
+      "gross_capacity_kg": 200,
+      "wheels": "24x2.4",
+      "certification": "EN 15194:2017 + EN 17860-2:2024"
+    },
+    "evidence_ids": [
+      "ev-yuba-passenger",
+      "ev-yuba-cert"
+    ],
+    "constraint_results": {
+      "req-passenger": "PASS",
+      "req-car-rack": "PASS",
+      "req-france-sav": "PASS",
+      "req-legal-vae": "PASS"
+    },
+    "status": "finalist"
+  },
+  {
+    "id": "garrett-miller-x",
+    "brand": "Garrett Miller",
+    "model": "X",
+    "category": "fatbike-biplace",
+    "price": {
+      "amount": 2190,
+      "currency": "EUR",
+      "seller": "market observation",
+      "observed_at": "2026-09-28"
+    },
+    "specs": {
+      "battery_wh": 720,
+      "advertised_capacity_kg": 170,
+      "wheels": "20x4"
+    },
+    "constraint_results": {
+      "req-passenger": "UNRESOLVED",
+      "req-car-rack": "UNRESOLVED"
+    },
+    "status": "candidate"
+  },
+  {
+    "id": "decathlon-e-three-500",
+    "brand": "Decathlon",
+    "model": "E-Three 500",
+    "category": "longtail",
+    "price": {
+      "amount": 2499,
+      "currency": "EUR",
+      "seller": "Decathlon",
+      "observed_at": "2026-09-28"
+    },
+    "specs": {
+      "battery_wh": 711,
+      "weight_kg": 39,
+      "length_cm": 220,
+      "gross_weight_kg": 209,
+      "rear_load_kg": 80
+    },
+    "constraint_results": {
+      "req-passenger": "PASS",
+      "req-car-rack": "FAIL",
+      "req-france-sav": "PASS",
+      "req-legal-vae": "PASS"
+    },
+    "status": "eliminated",
+    "elimination_reason": "39 kg / 2.20 m makes standard towbar transport unsuitable for the vacation requirement"
+  }
+]
