@@ -1,7 +1,7 @@
 ---
 name: purchase-research
 description: Structured pre-purchase research: discover real requirements, ask discriminating questions, research the market, audit finalists, compare total cost/SAV and produce a decision brief. Use when the user is considering buying or comparing a product.
-version: 1.1.0
+version: 1.2.0
 author: Loïs Puig
 license: MIT
 metadata:
@@ -25,7 +25,7 @@ This is a research/information skill. It must NOT install packages, modify the O
 4. Maintain Obligatory / Important / Desirable / Out-of-scope requirements.
 5. Research multiple solution families.
 6. Load `references/source-policy.md`; narrow to 3-6 finalists.
-7. Audit finalists using `references/audit-framework.md`.
+7. Load `references/evidence-engine.md`, then audit finalists using `references/audit-framework.md`. Track hard constraints as PASS / FAIL / UNRESOLVED and critical facts by evidence state.
 8. Verify current price, availability, warranty, service, parts and accessories.
 9. Compare complete-system and ownership cost when relevant.
 10. Use separate scenarios when different uses produce different optima.
@@ -35,3 +35,6 @@ This is a research/information skill. It must NOT install packages, modify the O
 
 ## Specialized skills
 If a matching specialized research skill exists, load it and combine its domain rules with this workflow. Do not silently create or update skills. Propose specialization only after the research is complete and only with explicit user approval.
+
+## Updates
+When update checking is requested or skill maintenance begins, load `references/update-policy.md` and compare this version to the public stable manifest. Never self-update silently; require explicit authorization before replacing local skill files.
