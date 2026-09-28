@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Purchase Research Product",
+  "type": "object",
+  "required": [
+    "id",
+    "brand",
+    "model"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "official_url": {
+      "type": "string"
+    },
+    "price": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "seller": {
+          "type": "string"
+        },
+        "observed_at": {
+          "type": "string"
+        },
+        "conditions": {
+          "type": "string"
+        }
+      }
+    },
+    "specs": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraint_results": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": [
+          "PASS",
+          "FAIL",
+          "UNRESOLVED"
+        ]
+      }
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "finalist",
+        "eliminated",
+        "selected",
+        "watch"
+      ]
+    },
+    "elimination_reason": {
+      "type": "string"
+    }
+  }
+}
