@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.0
+- Canonical-source contract: skills/ is authoritative, dist/ is generated.
+- Deterministic multi-platform builder.
+- Distribution/version validator.
+- GitHub Actions build/validate/diff gate.
+
 ## 1.4.0
 - Watch Engine for mature purchase studies.
 - Structured watch rules and snapshots.
