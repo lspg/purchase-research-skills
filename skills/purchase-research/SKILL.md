@@ -2,7 +2,7 @@
 name: purchase-research
 description: Accompagne une réflexion structurée avant l'achat d'un produit. Utiliser dès que l'utilisateur manifeste une intention, une envie, une hésitation ou un projet d'achat et souhaite être conseillé, comparer des produits, savoir quoi choisir, combien dépenser ou vérifier si un produit lui convient. Le skill transforme l'idée initiale en cahier des charges adapté à la catégorie, pose uniquement les questions discriminantes, effectue une recherche web poussée et sourcée (fabricants, documentation, tests indépendants, SAV, prix, accessoires, coût complet), compare plusieurs scénarios d'usage, identifie les inconnues bloquantes et génère sur demande ou en fin d'étude un document de synthèse décisionnel.
 metadata:
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Purchase Research
@@ -78,3 +78,7 @@ Lire `references/update-policy.md` lorsqu'une vérification ou une mise à jour 
 ## État structuré portable
 
 Pour une recherche longue, une reprise inter-session ou un transfert entre plateformes, lire `references/state-protocol.md`. Les exigences utilisateur sont durables ; les prix, stocks, promotions, réglementation, aides et autres faits temporels doivent être revalidés lors de la reprise. Ne jamais dépendre uniquement de l'historique conversationnel lorsqu'un bundle structuré est disponible.
+
+## Watch Engine
+
+Lorsqu'une étude mature passe en état `WATCH`, lire `references/watch-engine.md`. Ne pas relancer inutilement la découverte du marché : surveiller uniquement les finalistes et événements définis dans `watch.json`. Par défaut, ne notifier que les changements matériels susceptibles de modifier le produit choisi, le moment d'achat, le coût système, une contrainte PASS/FAIL/UNRESOLVED ou la confiance SAV/garantie. Une surveillance future ne doit être planifiée qu'avec l'accord de l'utilisateur et via les capacités de scheduling réellement disponibles sur l'hôte.
