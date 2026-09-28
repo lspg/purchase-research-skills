@@ -1,0 +1,76 @@
+{
+  "format_version": "1.0",
+  "watch_id": "watch-vae-vacation-finalists",
+  "session_id": "vae-vacation-2026-09",
+  "created_at": "2026-09-28",
+  "updated_at": "2026-09-28",
+  "targets": [
+    {
+      "product_id": "garrett-miller-z-2026",
+      "seller_urls": [
+        "https://www.garrettmiller.co/products/velo-ebike-garret-miller"
+      ],
+      "baseline_price": 2790,
+      "currency": "EUR",
+      "status": "active"
+    },
+    {
+      "product_id": "unikride-xtrail",
+      "seller_urls": [
+        "https://unikride.com/products/fatstreet-xtrail-velo-electrique-biplace"
+      ],
+      "baseline_price": 2999,
+      "currency": "EUR",
+      "status": "active"
+    },
+    {
+      "product_id": "yuba-kombi-ep5",
+      "seller_urls": [
+        "https://yubabikes.eu/fr/produit/kombi-ep5/"
+      ],
+      "baseline_price": 3299,
+      "currency": "EUR",
+      "status": "active"
+    }
+  ],
+  "rules": [
+    {
+      "type": "price_below",
+      "product_id": "garrett-miller-z-2026",
+      "threshold": 2500,
+      "notes": "Only reliable seller/SAV"
+    },
+    {
+      "type": "price_drop_percent",
+      "product_id": "unikride-xtrail",
+      "threshold": 10
+    },
+    {
+      "type": "price_drop_percent",
+      "product_id": "yuba-kombi-ep5",
+      "threshold": 10
+    },
+    {
+      "type": "blocker_resolved",
+      "product_id": "garrett-miller-z-2026",
+      "notes": "Payload/passenger or car-rack dimensions"
+    },
+    {
+      "type": "blocker_resolved",
+      "product_id": "unikride-xtrail",
+      "notes": "Payload/passenger or car-rack dimensions"
+    },
+    {
+      "type": "new_generation",
+      "notes": "Audit against requirements before notification as replacement"
+    }
+  ],
+  "notification_policy": {
+    "only_material_changes": true,
+    "deduplicate": true,
+    "cooldown_hours": 24,
+    "include_no_change_reports": false
+  },
+  "last_snapshot_file": "watch-snapshot.json",
+  "history_file": "watch-history.jsonl"
+}
