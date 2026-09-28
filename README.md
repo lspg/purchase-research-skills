@@ -4,7 +4,7 @@ Reusable Agent Skills for structured product-purchase research.
 
 ## Skills
 
-### purchase-research — v1.2.0
+### purchase-research — v1.3.0
 Generic pre-purchase research orchestrator. It turns an initial buying idea into a requirements brief, asks only discriminating questions, researches the market, audits finalists, compares total cost and after-sales support, and can propose creation or improvement of a specialized domain skill.
 
 ### vae-research — v1.0.0
@@ -56,3 +56,10 @@ See each distribution README for installation guidance.
 ## Version manifest
 
 `manifest.json` is the canonical stable-version manifest. Platform distributions may check it and offer updates, but mutation/update is never silent and requires platform capability plus user authorization.
+
+
+## Structured research state
+
+Purchase Research v1.3 introduces portable JSON state described by schemas in `schemas/`: requirements, evidence, products, configurations and research sessions. This allows a study to be exported and resumed across compatible hosts while requiring time-sensitive market facts to be refreshed.
+
+See `examples/structured-state/` for a minimal example.
