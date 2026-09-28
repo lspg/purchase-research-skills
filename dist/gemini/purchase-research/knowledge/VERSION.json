@@ -1,6 +1,6 @@
 {
   "project": "purchase-research",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "channel": "stable",
   "manifest": "https://github.com/lspg/purchase-research-skills/blob/main/manifest.json"
 }
