@@ -1,7 +1,7 @@
 ---
 name: purchase-research
 description: Structured pre-purchase research: discover real requirements, ask discriminating questions, research the market, audit finalists, compare total cost/SAV and produce a decision brief. Use when the user is considering buying or comparing a product.
-version: 1.2.0
+version: 1.3.0
 author: Loïs Puig
 license: MIT
 metadata:
@@ -38,3 +38,6 @@ If a matching specialized research skill exists, load it and combine its domain 
 
 ## Updates
 When update checking is requested or skill maintenance begins, load `references/update-policy.md` and compare this version to the public stable manifest. Never self-update silently; require explicit authorization before replacing local skill files.
+
+## Portable research state
+For substantial research, cross-session continuation or handoff, load `references/state-protocol.md`. Prefer a structured bundle over reconstructing state from chat history. Revalidate time-sensitive market facts when resuming.
