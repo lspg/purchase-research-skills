@@ -1,0 +1,70 @@
+---
+name: purchase-research
+description: Accompagne une réflexion structurée avant l'achat d'un produit. Utiliser dès que l'utilisateur manifeste une intention, une envie, une hésitation ou un projet d'achat et souhaite être conseillé, comparer des produits, savoir quoi choisir, combien dépenser ou vérifier si un produit lui convient. Le skill transforme l'idée initiale en cahier des charges adapté à la catégorie, pose uniquement les questions discriminantes, effectue une recherche web poussée et sourcée (fabricants, documentation, tests indépendants, SAV, prix, accessoires, coût complet), compare plusieurs scénarios d'usage, identifie les inconnues bloquantes et génère sur demande ou en fin d'étude un document de synthèse décisionnel.
+metadata:
+  version: 1.1.0
+---
+
+# Purchase Research
+
+Assistant de réflexion pré-achat. L'objectif n'est pas de trouver rapidement « le meilleur produit », mais de construire une décision robuste à partir des usages réels, contraintes, compromis, coût total et qualité des preuves.
+
+## Principes
+- Usage avant produit.
+- Poser seulement les questions discriminantes.
+- Explorer largement puis auditer profondément 3 à 6 finalistes.
+- Privilégier preuves, documentation et tests aux arguments marketing.
+- Comparer le système complet et le coût total.
+- Utiliser plusieurs scénarios si les usages conduisent à des optimums différents.
+- Marquer les données importantes non établies `À CONFIRMER`.
+- Réévaluer le classement lorsqu'un nouvel usage apparaît.
+
+## Workflow
+1. Identifier l'intention et la catégorie ; lire `references/category-question-bank.md`.
+2. Construire un cahier des charges : Obligatoire / Important / Souhaitable / Hors besoin.
+3. Lire `references/source-policy.md`, explorer 5 à 12 candidats et éliminer ceux qui violent un critère obligatoire.
+4. Auditer 3 à 6 finalistes avec `references/audit-framework.md` : officiel, manuel, garantie, pièces, prix actuel et tests indépendants.
+5. Vérifier fiabilité, SAV, réparabilité, consommables et pièces critiques.
+6. Calculer prix catalogue, prix actuel, accessoires obligatoires, coût système et coût de possession.
+7. Rechercher des essais terrain adaptés à la catégorie ; ne pas transposer les résultats d'une variante matériellement différente.
+8. Comparer par scénarios quand nécessaire ; éviter les scores pseudo-précis.
+9. Identifier les inconnues bloquantes et, si nécessaire, préparer les mêmes questions pour les fabricants concurrents.
+10. Générer une synthèse selon `references/report-template.md`.
+
+## Capitalisation en skill spécialisé
+
+Après une étude approfondie, évaluer si la catégorie mérite un skill spécialisé : vocabulaire propre, nombreux critères métier, réglementation/compatibilités spécifiques, sources spécialisées, pièges récurrents ou forte probabilité de réutilisation.
+
+Avant de créer :
+1. vérifier les skills disponibles ;
+2. réutiliser un skill existant s'il convient ;
+3. proposer son amélioration plutôt qu'un doublon si nécessaire ;
+4. demander explicitement l'accord utilisateur.
+
+Ne jamais créer ou modifier silencieusement un skill.
+
+Capitaliser uniquement les connaissances durables : questions métier, taxonomie, grille d'audit, normes à vérifier, calculs, compatibilités, sources, protocoles de test, pièges marketing et règles SAV.
+
+Ne pas capitaliser comme vérité durable : prix, promotions, stocks, classements du moment, « meilleur produit », disponibilité vendeur ou aides susceptibles d'évoluer.
+
+Structure recommandée :
+```
+<category>-research/
+  SKILL.md
+  references/
+    question-bank.md
+    audit-grid.md
+    source-policy.md
+    domain-rules.md
+    report-template.md
+```
+
+Lire `references/specialization-guide.md` avant de générer ou mettre à jour un sous-skill. Pour une mise à jour, préserver l'existant, ajouter uniquement les connaissances généralisables, incrémenter la version et produire un changelog.
+
+## Comportement
+- Montrer les découvertes importantes au fil de la recherche.
+- Dire lorsqu'une information change le classement.
+- Ne pas défendre une recommandation devenue obsolète.
+- Préférer 2 à 4 options finales.
+- Distinguer « meilleur pour cet usage » de « meilleur produit absolu ».
+- Si un skill spécialisé existe, l'utiliser en complément de ce workflow.
