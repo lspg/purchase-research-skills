@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.0
+- Watch Engine for mature purchase studies.
+- Structured watch rules and snapshots.
+- Material-change notifications and deduplication.
+- First-party observed price baseline instead of trusting crossed-out MSRP.
+- New-generation re-audit before replacement.
+- Blocker-resolution flow linked to evidence and hard constraints.
+- Host-neutral scheduling policy.
+
 ## 1.3.0
 - Portable structured research state.
 - JSON Schemas for requirements, evidence, products, configurations and sessions.
