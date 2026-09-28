@@ -1,0 +1,25 @@
+{
+  "format_version": "1.0",
+  "watch_id": "watch-vae-finalists",
+  "session_id": "example-vae-vacation",
+  "created_at": "2026-09-28",
+  "updated_at": "2026-09-28",
+  "targets": [
+    {"product_id":"garrett-miller-z-2026","baseline_price":2790,"currency":"EUR","status":"active"},
+    {"product_id":"unikride-xtrail","baseline_price":2999,"currency":"EUR","status":"active"}
+  ],
+  "rules": [
+    {"type":"price_below","product_id":"garrett-miller-z-2026","threshold":2500,"notes":"Notify only from acceptable seller/SAV"},
+    {"type":"price_drop_percent","product_id":"unikride-xtrail","threshold":10},
+    {"type":"blocker_resolved","product_id":"garrett-miller-z-2026","notes":"Payload definition or battery-removed weight"},
+    {"type":"new_generation","notes":"Audit replacement before recommending it"}
+  ],
+  "notification_policy": {
+    "only_material_changes": true,
+    "deduplicate": true,
+    "cooldown_hours": 24,
+    "include_no_change_reports": false
+  },
+  "last_snapshot_file": "watch-snapshot.json",
+  "history_file": "watch-history.jsonl"
+}
