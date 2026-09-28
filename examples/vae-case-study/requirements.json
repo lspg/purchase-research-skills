@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "category": "vae",
+  "goal": "VAE polyvalent transportable en vacances, route/voie verte, chemins niveau 1 et ponctuellement 2, passager adulte occasionnel et grosses courses",
+  "requirements": {
+    "mandatory": [
+      {
+        "id": "req-passenger",
+        "statement": "Transport ponctuel d'un conducteur de 85 kg et d'un passager adulte d'environ 70 kg sans charge lourde simultanée"
+      },
+      {
+        "id": "req-car-rack",
+        "statement": "Transport réaliste sur porte-vélos d'attelage"
+      },
+      {
+        "id": "req-france-sav",
+        "statement": "SAV et pièces raisonnablement accessibles en France"
+      },
+      {
+        "id": "req-legal-vae",
+        "statement": "VAE conforme à l'usage routier France/UE"
+      }
+    ],
+    "important": [
+      {
+        "id": "req-trails",
+        "statement": "Confort et capacité sur chemins niveau 1 et ponctuellement niveau 2"
+      },
+      {
+        "id": "req-shopping",
+        "statement": "Pouvoir assurer des courses conséquentes via portage ou remorque"
+      },
+      {
+        "id": "req-range",
+        "statement": "Autonomie confortable pour une journée de vacances"
+      }
+    ],
+    "desirable": [
+      {
+        "id": "req-modular",
+        "statement": "Configuration modulaire passager / bagagerie / remorque"
+      },
+      {
+        "id": "req-budget",
+        "statement": "Bon rapport coût système / polyvalence"
+      }
+    ],
+    "out_of_scope": [
+      {
+        "id": "req-long-tour",
+        "statement": "Grande randonnée itinérante 80-100+ km avec camping comme priorité"
+      }
+    ]
+  }
+}
