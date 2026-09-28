@@ -4,7 +4,7 @@ Reusable Agent Skills for structured product-purchase research.
 
 ## Skills
 
-### purchase-research — v1.3.0
+### purchase-research — v1.4.0
 Generic pre-purchase research orchestrator. It turns an initial buying idea into a requirements brief, asks only discriminating questions, researches the market, audits finalists, compares total cost and after-sales support, and can propose creation or improvement of a specialized domain skill.
 
 ### vae-research — v1.0.0
@@ -63,3 +63,8 @@ See each distribution README for installation guidance.
 Purchase Research v1.3 introduces portable JSON state described by schemas in `schemas/`: requirements, evidence, products, configurations and research sessions. This allows a study to be exported and resumed across compatible hosts while requiring time-sensitive market facts to be refreshed.
 
 See `examples/structured-state/` for a minimal example.
+
+
+## Watch Engine
+
+Purchase Research v1.4 adds a host-neutral Watch Engine. A mature research session can monitor only compatible finalists for material changes such as real price thresholds, stock, promotions, new generations, blocker resolution, warranty/SAV or subsidy changes. Watch specifications and snapshots use the schemas in `schemas/`. Scheduling is delegated to the host and always requires user authorization.
