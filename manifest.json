@@ -5,7 +5,7 @@
   "repository": "https://github.com/lspg/purchase-research-skills",
   "skills": {
     "purchase-research": {
-      "version": "1.4.0",
+      "version": "1.5.0",
       "path": "skills/purchase-research"
     },
     "vae-research": {
@@ -27,5 +27,11 @@
   "schemas": {
     "version": "1.1",
     "path": "schemas"
+  },
+  "build": {
+    "source": "skills/",
+    "generated": "dist/",
+    "builder": "tools/build.py",
+    "validator": "tools/validate.py"
   }
 }
