@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Purchase Research Watch",
+  "type": "object",
+  "required": [
+    "format_version",
+    "watch_id",
+    "session_id",
+    "targets",
+    "rules"
+  ],
+  "properties": {
+    "format_version": {
+      "const": "1.0"
+    },
+    "watch_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "targets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "product_id"
+        ],
+        "properties": {
+          "product_id": {
+            "type": "string"
+          },
+          "variant": {
+            "type": "string"
+          },
+          "seller_urls": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "baseline_price": {
+            "type": "number"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "active",
+              "paused",
+              "removed"
+            ]
+          }
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "price_below",
+              "price_drop_percent",
+              "stock_available",
+              "new_generation",
+              "promotion",
+              "blocker_resolved",
+              "warranty_change",
+              "subsidy_change",
+              "seller_change",
+              "spec_change"
+            ]
+          },
+          "product_id": {
+            "type": "string"
+          },
+          "threshold": {
+            "type": [
+              "number",
+              "string"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notification_policy": {
+      "type": "object",
+      "properties": {
+        "only_material_changes": {
+          "type": "boolean"
+        },
+        "deduplicate": {
+          "type": "boolean"
+        },
+        "cooldown_hours": {
+          "type": "integer"
+        },
+        "include_no_change_reports": {
+          "type": "boolean"
+        }
+      }
+    },
+    "last_snapshot_file": {
+      "type": "string"
+    },
+    "history_file": {
+      "type": "string"
+    }
+  }
+}
