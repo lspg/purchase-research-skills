@@ -43,3 +43,11 @@ A standalone edition for accounts without custom Skill import is available in:
 `dist/chatgpt-free/purchase-research.md`
 
 See `dist/chatgpt-free/README.md` for installation guidance and limitations. This edition preserves the core pre-purchase workflow but does not automatically load the modular reference files or specialized skills.
+
+
+## Gemini and Hermes
+
+- `dist/gemini/` contains Gemini Gem instructions plus Knowledge files for purchase-research and vae-research.
+- `dist/hermes/` contains native Hermes Agent SKILL.md distributions with modular references and research-only safety boundaries.
+
+See each distribution README for installation guidance.
