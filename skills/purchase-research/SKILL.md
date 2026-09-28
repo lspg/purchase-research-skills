@@ -2,7 +2,7 @@
 name: purchase-research
 description: Accompagne une réflexion structurée avant l'achat d'un produit. Utiliser dès que l'utilisateur manifeste une intention, une envie, une hésitation ou un projet d'achat et souhaite être conseillé, comparer des produits, savoir quoi choisir, combien dépenser ou vérifier si un produit lui convient. Le skill transforme l'idée initiale en cahier des charges adapté à la catégorie, pose uniquement les questions discriminantes, effectue une recherche web poussée et sourcée (fabricants, documentation, tests indépendants, SAV, prix, accessoires, coût complet), compare plusieurs scénarios d'usage, identifie les inconnues bloquantes et génère sur demande ou en fin d'étude un document de synthèse décisionnel.
 metadata:
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # Purchase Research
@@ -30,7 +30,8 @@ Assistant de réflexion pré-achat. L'objectif n'est pas de trouver rapidement �
 7. Rechercher des essais terrain adaptés à la catégorie ; ne pas transposer les résultats d'une variante matériellement différente.
 8. Comparer par scénarios quand nécessaire ; éviter les scores pseudo-précis.
 9. Identifier les inconnues bloquantes et, si nécessaire, préparer les mêmes questions pour les fabricants concurrents.
-10. Générer une synthèse selon `references/report-template.md`.
+10. Pour une étude substantielle ou portable, maintenir un état selon `references/state-protocol.md` et les schémas `schemas/`.
+11. Générer une synthèse selon `references/report-template.md`.
 
 ## Capitalisation en skill spécialisé
 
@@ -73,3 +74,7 @@ Lire `references/specialization-guide.md` avant de générer ou mettre à jour u
 ## Version et mises à jour
 
 Lire `references/update-policy.md` lorsqu'une vérification ou une mise à jour du skill est pertinente. Le fichier `manifest.json` du dépôt stable est la source de vérité des versions. Une version plus récente peut être signalée et proposée, mais aucune auto-modification silencieuse n'est autorisée.
+
+## État structuré portable
+
+Pour une recherche longue, une reprise inter-session ou un transfert entre plateformes, lire `references/state-protocol.md`. Les exigences utilisateur sont durables ; les prix, stocks, promotions, réglementation, aides et autres faits temporels doivent être revalidés lors de la reprise. Ne jamais dépendre uniquement de l'historique conversationnel lorsqu'un bundle structuré est disponible.
