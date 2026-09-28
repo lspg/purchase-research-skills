@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Purchase Research Evidence",
+  "type": "object",
+  "required": [
+    "id",
+    "claim",
+    "state"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "claim": {
+      "type": "string"
+    },
+    "value": {},
+    "unit": {
+      "type": "string"
+    },
+    "state": {
+      "enum": [
+        "CONFIRMED",
+        "CORROBORATED",
+        "CLAIMED",
+        "CONFLICTING",
+        "UNKNOWN"
+      ]
+    },
+    "source_type": {
+      "enum": [
+        "manufacturer",
+        "manual",
+        "certificate",
+        "official",
+        "authorized_retailer",
+        "independent_test",
+        "community",
+        "comparison",
+        "unknown"
+      ]
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "source_date": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "decision_impact": {
+      "enum": [
+        "blocking",
+        "high",
+        "medium",
+        "low"
+      ]
+    }
+  }
+}
