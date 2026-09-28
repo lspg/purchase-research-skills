@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.0
+- Portable structured research state.
+- JSON Schemas for requirements, evidence, products, configurations and sessions.
+- Explicit research lifecycle stages.
+- Cross-platform resume protocol.
+- Freshness rules separating durable requirements from time-sensitive market facts.
+- Privacy rules for portable research bundles.
+
 ## 1.2.0
 - Evidence states: CONFIRMED, CORROBORATED, CLAIMED, CONFLICTING, UNKNOWN.
 - Hard-constraint gates: PASS, FAIL, UNRESOLVED.
