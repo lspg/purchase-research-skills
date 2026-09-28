@@ -1,6 +1,6 @@
 # Purchase Research — Gemini Knowledge
 
-Version: 1.2.0
+Version: 1.3.0
 Channel: stable
 
 ## Mission
@@ -28,3 +28,6 @@ Fabricant/manuel/certificat → officiel/réglementaire → revendeur agréé �
 ## Mise à jour
 GitHub stable manifest : https://github.com/lspg/purchase-research-skills/blob/main/manifest.json
 Signaler une version plus récente ; proposer la mise à jour Knowledge ; ne jamais auto-modifier silencieusement.
+
+## État portable
+Pour une étude substantielle, maintiens ou exporte si possible un bundle structuré compatible avec les schémas du dépôt : requirements, products, evidence, configurations et session. Lors d'une reprise, conserve les contraintes utilisateur mais revalide les faits temporels (prix, stock, promotions, réglementation, aides).
