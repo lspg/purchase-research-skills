@@ -2,7 +2,7 @@
 name: purchase-research
 description: Accompagne une réflexion structurée avant l'achat d'un produit. Utiliser dès que l'utilisateur manifeste une intention, une envie, une hésitation ou un projet d'achat et souhaite être conseillé, comparer des produits, savoir quoi choisir, combien dépenser ou vérifier si un produit lui convient. Le skill transforme l'idée initiale en cahier des charges adapté à la catégorie, pose uniquement les questions discriminantes, effectue une recherche web poussée et sourcée (fabricants, documentation, tests indépendants, SAV, prix, accessoires, coût complet), compare plusieurs scénarios d'usage, identifie les inconnues bloquantes et génère sur demande ou en fin d'étude un document de synthèse décisionnel.
 metadata:
-  version: 1.4.0
+  version: 1.5.0
 ---
 
 # Purchase Research
@@ -82,3 +82,7 @@ Pour une recherche longue, une reprise inter-session ou un transfert entre plate
 ## Watch Engine
 
 Lorsqu'une étude mature passe en état `WATCH`, lire `references/watch-engine.md`. Ne pas relancer inutilement la découverte du marché : surveiller uniquement les finalistes et événements définis dans `watch.json`. Par défaut, ne notifier que les changements matériels susceptibles de modifier le produit choisi, le moment d'achat, le coût système, une contrainte PASS/FAIL/UNRESOLVED ou la confiance SAV/garantie. Une surveillance future ne doit être planifiée qu'avec l'accord de l'utilisateur et via les capacités de scheduling réellement disponibles sur l'hôte.
+
+## Build contract
+
+The canonical source is `skills/`. Platform-specific `dist/` files are generated artifacts and should not be edited as the source of a behavior change. Repository tooling under `tools/` builds and validates distributions. When changing durable behavior, update the canonical skill/references first, regenerate distributions, then commit both source and generated output.
